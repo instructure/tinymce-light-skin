@@ -1,0 +1,25 @@
+{
+  "name": "tinymce-light-skin",
+  "version": "1.0.0",
+  "description": "Pixabay's Light TinyMCE skin with all assets bundled in the JS.",
+  "main": "lib/skin.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "npm run build && mocha 'test/**/*.js'",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "tinymce",
+    "theme",
+    "skin"
+  ],
+  "author": "Brent Burgoyne",
+  "license": "MIT",
+  "devDependencies": {
+    "base64-font-loader": "0.0.4",
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
+  }
+}
