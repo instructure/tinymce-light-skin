@@ -16,7 +16,7 @@ browsers.
 
 ## Usage
 
-```
+```javascript
 import skin from 'tinymce-light-skin'
 
 // append styles to head
