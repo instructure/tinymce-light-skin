@@ -6,7 +6,7 @@ module.exports = {
     path: './lib',
     filename: 'skin.js',
     library: 'tinymce-light-skin',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'umd'
   },
   module: {
     loaders: [
