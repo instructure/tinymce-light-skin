@@ -21,3 +21,10 @@ export function unuseInline () {
   skin.unuse()
   inline.unuse()
 }
+
+export default {
+  use: use,
+  unuse: unuse,
+  useInline: useInline,
+  unuseInline: unuseInline
+}
