@@ -4,12 +4,10 @@ import inline from '../vendor/light/content.inline.min.css'
 
 export function use () {
   skin.use()
-  content.use()
 }
 
 export function unuse () {
   skin.unuse()
-  content.unuse()
 }
 
 export function useInline () {
@@ -22,9 +20,12 @@ export function unuseInline () {
   inline.unuse()
 }
 
+export const contentStyle = content.toString()
+
 export default {
   use: use,
   unuse: unuse,
   useInline: useInline,
-  unuseInline: unuseInline
+  unuseInline: unuseInline,
+  contentStyle: contentStyle
 }

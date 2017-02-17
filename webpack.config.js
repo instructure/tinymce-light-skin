@@ -10,7 +10,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.css$/, loader: 'style-loader/useable!css-loader'},
+      {test: /(skin|content\.inline)\.min\.css$/, loader: 'style-loader/useable' },
+      {test: /\.css$/, loader: 'css-loader'},
       {test: /\.gif/, loader: 'url-loader'},
       {test: /\.woff/, loader: 'base64-font-loader'}
     ]
