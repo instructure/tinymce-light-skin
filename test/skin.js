@@ -41,4 +41,22 @@ describe('skin', () => {
       assert.equal(document.styleSheets.length, 0)
     })
   })
+
+  describe('default export', () => {
+    it('has the correct shape', () => {
+      const expected = {
+        use: skin.use,
+        unuse: skin.unuse,
+        useInline: skin.useInline,
+        unuseInline: skin.unuseInline,
+        default: {
+          use: skin.use,
+          unuse: skin.unuse,
+          useInline: skin.useInline,
+          unuseInline: skin.unuseInline,
+        }
+      }
+      assert.deepEqual(skin, expected)
+    })
+  })
 })
