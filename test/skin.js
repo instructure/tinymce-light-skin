@@ -13,6 +13,10 @@ describe('skin', () => {
   })
 
   describe('use', () => {
+    afterEach(() => {
+      skin.unuse()
+    })
+
     it('adds styles to head', () => {
       assert.equal(document.styleSheets.length, 0)
       skin.use()
@@ -23,6 +27,18 @@ describe('skin', () => {
     it('adds uses data url for font-face', () => {
       skin.use()
       assert(/data:application\/font-woff/.test(document.querySelector('style').textContent))
+    })
+  })
+
+  describe('unuse', () => {
+    beforeEach(() => {
+      skin.use()
+    })
+
+    it('removes styles from head', () => {
+      assert.equal(document.styleSheets.length, 2)
+      skin.unuse()
+      assert.equal(document.styleSheets.length, 0)
     })
   })
 })
