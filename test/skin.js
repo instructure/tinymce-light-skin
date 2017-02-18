@@ -42,6 +42,31 @@ describe('skin', () => {
     })
   })
 
+  describe('useInline', () => {
+    afterEach(() => {
+      skin.unuseInline()
+    })
+
+    it('adds styles to head', () => {
+      assert.equal(document.styleSheets.length, 0)
+      skin.useInline()
+      assert.equal(document.styleSheets.length, 2)
+    })
+  })
+
+  describe('unuseInline', () => {
+    beforeEach(() => {
+      skin.useInline()
+    })
+
+    it('removes styles from head', () => {
+      assert.equal(document.styleSheets.length, 2)
+      skin.unuseInline()
+      assert.equal(document.styleSheets.length, 0)
+    })
+  })
+
+
   describe('default export', () => {
     it('has the correct shape', () => {
       const expected = {
