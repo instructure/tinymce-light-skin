@@ -20,13 +20,16 @@ browsers.
 import skin from 'tinymce-light-skin'
 
 // append styles to head
-skin.use() 
+skin.use()
 
 // when initializing TinyMCE set skin to false
 tinymce.init({ skin: false })
 
 // optionaly remove styles from head based on reference count
 skin.unuse()
+
+// inject content styles into the editor's iframe
+tinymce.init({ content_style: skin.contentStyle })
 
 // inline variants
 skin.useInline()
