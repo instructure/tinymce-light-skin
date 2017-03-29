@@ -9,7 +9,34 @@
 .mce-toolbar .mce-btn:hover i { color: #333; }
 .mce-primary { background: #6ba72b; }
 .mce-primary:hover { background: #68a029; }
-.mce-btn-group:not(:first-child) { border-left: 3px solid #fff; }
 .mce-menu-item:hover { background: #eee; }
 .mce-menu-item.mce-disabled * { color: #ddd !important; }
 .mce-edit-area { border: 0 solid #ddd; border-width: 1px !important; }
+.mce-i-tabledelete:before{content:"\e60e"}
+.mce-i-tableinsertrowbefore:before{content:"\e60a"}
+.mce-i-tableinsertrowafter:before{content:"\e60b"}
+.mce-i-tabledeleterow:before{content:"\e800"}
+.mce-i-tableinsertcolbefore:before{content:"\e608"}
+.mce-i-tableinsertcolafter:before{content:"\e609"}
+.mce-i-tabledeletecol:before{content:"\e801"}
+.mce-tinymce-inline{background-color:#f0f0f0;border:solid 1px #d9d9d9}
+.mce-btn-group:not(:first-child) { border-left: 1px solid #d9d9d9; }
+.mce-arrow-up{margin-top:12px}
+.mce-arrow-down{margin-top:-12px}
+.mce-arrow:before,.mce-arrow:after{position:absolute;left:50%;display:block;width:0;height:0;border-style:solid;border-color:transparent;content:""}
+.mce-arrow.mce-arrow-up:before{top:-9px;border-bottom-color:rgba(0,0,0,0.2);border-width:0 9px 9px;margin-left:-9px}
+.mce-arrow.mce-arrow-down:before{bottom:-9px;border-top-color:rgba(0,0,0,0.2);border-width:9px 9px 0;margin-left:-9px}
+.mce-arrow.mce-arrow-up:after{top:-8px;border-bottom-color:#f0f0f0;border-width:0 8px 8px;margin-left:-8px}
+.mce-arrow.mce-arrow-down:after{bottom:-8px;border-top-color:#f0f0f0;border-width:8px 8px 0;margin-left:-8px}
+.mce-arrow.mce-arrow-left:before,.mce-arrow.mce-arrow-left:after{margin:0}
+.mce-arrow.mce-arrow-left:before{left:8px}
+.mce-arrow.mce-arrow-left:after{left:9px}
+.mce-arrow.mce-arrow-right:before,.mce-arrow.mce-arrow-right:after{left:auto;margin:0}
+.mce-arrow.mce-arrow-right:before{right:8px}
+.mce-arrow.mce-arrow-right:after{right:9px}
+.mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-left:before{left:-9px;top:50%;border-right-color:rgba(0,0,0,0.2);border-width:9px 9px 9px 0;margin-top:-9px}
+.mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-left:after{left:-8px;top:50%;border-right-color:#f0f0f0;border-width:8px 8px 8px 0;margin-top:-8px}
+.mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-left{margin-left:12px}
+.mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-right:before{right:-9px;top:50%;border-left-color:rgba(0,0,0,0.2);border-width:9px 0 9px 9px;margin-top:-9px}
+.mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-right:after{right:-8px;top:50%;border-left-color:#f0f0f0;border-width:8px 0 8px 8px;margin-top:-8px}
+.mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-right{margin-left:-14px}

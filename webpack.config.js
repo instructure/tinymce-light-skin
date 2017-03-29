@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: './src/skin.js',
   output: {
-    path: './lib',
+    path: __dirname + '/lib',
     filename: 'skin.js',
     library: 'tinymce-light-skin',
     libraryTarget: 'umd'
