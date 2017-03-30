@@ -9,7 +9,6 @@
 .mce-toolbar .mce-btn:hover i { color: #333; }
 .mce-primary { background: #6ba72b; }
 .mce-primary:hover { background: #68a029; }
-.mce-menu-item:hover { background: #eee; }
 .mce-menu-item.mce-disabled * { color: #ddd !important; }
 .mce-edit-area { border: 0 solid #ddd; border-width: 1px !important; }
 .mce-i-tabledelete:before{content:"\e60e"}
@@ -40,3 +39,10 @@
 .mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-right:before{right:-9px;top:50%;border-left-color:rgba(0,0,0,0.2);border-width:9px 0 9px 9px;margin-top:-9px}
 .mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-right:after{right:-8px;top:50%;border-left-color:#f0f0f0;border-width:8px 0 8px 8px;margin-top:-8px}
 .mce-arrow.mce-arrow-center.mce-arrow.mce-arrow-right{margin-left:-14px}
+.mce-window-head{background-color:#fff}
+.mce-menu{background-color:#fff}
+.mce-menu-item:hover { background: #eee }
+.mce-menu-item:hover .mce-text{color:#000}
+.mce-grid-border a:hover, .mce-grid-border a.mce-active{border-color: #a1a1a1}
+.mce-menu-item-normal.mce-active .mce-text{color:#000}
+.mce-primary button .mce-txt{color:#fff}
