@@ -46,3 +46,4 @@
 .mce-grid-border a:hover, .mce-grid-border a.mce-active{border-color: #a1a1a1}
 .mce-menu-item-normal.mce-active .mce-text{color:#000}
 .mce-primary button .mce-txt{color:#fff}
+.mce-tab:focus {outline: 0.1em solid #38add7; outline-offset: -0.2em;}
