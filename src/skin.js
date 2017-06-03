@@ -20,7 +20,7 @@ export function unuseInline () {
   inline.unuse()
 }
 
-export const contentStyle = content.toString()
+export var contentStyle = content.toString()
 
 export default {
   use: use,
