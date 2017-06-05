@@ -5,7 +5,7 @@
   "main": "lib/skin.js",
   "scripts": {
     "build": "webpack",
-    "test": "npm run build && mocha 'test/**/*.js'",
+    "test": "npm run build && eslint lib && mocha 'test/**/*.js'",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -18,6 +18,7 @@
   "devDependencies": {
     "base64-font-loader": "0.0.4",
     "css-loader": "^0.26.1",
+    "eslint": "^3.19.0",
     "jsdom": "^9.10.0",
     "mocha": "^3.2.0",
     "mocha-jsdom": "^1.1.0",
@@ -35,5 +36,12 @@
   "bugs": {
     "url": "https://github.com/brentburg/tinymce-light-skin/issues"
   },
-  "homepage": "https://github.com/brentburg/tinymce-light-skin#readme"
+  "homepage": "https://github.com/brentburg/tinymce-light-skin#readme",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": false
+    }
+  }
 }
