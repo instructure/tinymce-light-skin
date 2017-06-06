@@ -1,6 +1,6 @@
 # TinyMCE Light Skin
 
-+[Build status for master branch](https://travis-ci.org/instructure/tinymce-light-skin.svg?branch=master)
+![Build status for master branch](https://travis-ci.org/instructure/tinymce-light-skin.svg?branch=master)
 
 This is a version of the [Pixabay's Light TinyMCE Skin][1] packaged with all
 static assets in the JavaScript. This makes it easier to inlcude in modules
