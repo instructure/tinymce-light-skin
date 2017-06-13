@@ -13,6 +13,8 @@ Some slight modifications to the original skin have been made:
   - IE7 specific CSS has been removed
   - WOFF is the only font format used
   - CSS changes for better keyboard navigation
+  - Remove font sizes from content CSS to avoid conflicting with app specific
+    content CSS.
 
 This makes the bundle smaller and still provides good support for modern
 browsers.
