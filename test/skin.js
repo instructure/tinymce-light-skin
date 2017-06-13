@@ -72,12 +72,16 @@ describe('skin', () => {
       const expected = {
         use: skin.use,
         unuse: skin.unuse,
+        useCanvas: skin.useCanvas,
+        unuseCanvas: skin.unuseCanvas,
         useInline: skin.useInline,
         unuseInline: skin.unuseInline,
         contentStyle: skin.contentStyle,
         default: {
           use: skin.use,
           unuse: skin.unuse,
+          useCanvas: skin.useCanvas,
+          unuseCanvas: skin.unuseCanvas,
           useInline: skin.useInline,
           unuseInline: skin.unuseInline,
           contentStyle: skin.contentStyle,
