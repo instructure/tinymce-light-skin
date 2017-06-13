@@ -10,7 +10,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /(skin|content\.inline)\.min\.css$/, loader: 'style-loader/useable' },
+      {test: /(canvas|skin|content\.inline)(\.min)?\.css$/, loader: 'style-loader/useable' },
       {test: /\.css$/, loader: 'css-loader'},
       {test: /\.gif/, loader: 'url-loader'},
       {test: /\.woff/, loader: 'base64-font-loader'}
