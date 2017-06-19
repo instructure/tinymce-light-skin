@@ -2,6 +2,7 @@
 
 /* mod */
 .mce-panel { background: transparent; border: 0; }
+.mce-panel.mce-window { background-color: #fff; }
 .mce-panel.mce-foot { border: 0 solid rgba(0,0,0,.2); }
 .mce-panel.mce-menu { border: 1px solid #cbcbcb; }
 .mce-toolbar .mce-btn { border: 0; }
